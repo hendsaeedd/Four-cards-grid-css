@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 24rem;
+  height: 10rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+.content h1 {
+  color: hsl(229, 6%, 66%);
+}
+.content samp{
+  color: hsl(234, 12%, 34%);
+}
+.content p {
+  color: hsl(229, 6%, 66%);
+  width: 28rem;
+}
+
+:is(.karma , .calculator, .team-builder, .supervisor) {
+  width: 21rem;
+  height: 15rem;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: .2rem;
+  overflow: hidden;
+  padding: 2rem;
+  box-shadow: 10px 10px 14px 7px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+:is(.icon-team-builder , .icon-calculator , .icon-karma , .icon-supervisor) {
+  position: absolute;
+  left: 81%;
+  top: 73%;
+  transform: translate(-50% ,-50%);
+}
+.icon h2 {
+  color: hsl(234, 12%, 34%);
+}
+.icon p{
+  margin-top: 1rem;
+  color: hsl(229, 6%, 66%);
+}
+.karma {
+  border-top: solid  hsl(34, 97%, 64%) .2rem;
+  top: 82%;
+}
+.calculator {
+  border-top: solid hsl(212, 86%, 64%) .2rem;
+  left: 78%;
+  top: 62%;
+}
+.team-builder {
+  border-top: solid hsl(0, 78%, 62%) .2rem;
+  top: 44%;
+}
+.supervisor {
+  border-top: solid hsl(180, 62%, 55%) .2rem;
+  left: 23%;
+  top: 62%;
+}
+
+@media screen  and (max-width: 400px) {
+
+  .content p {
+      width: 17rem;
+      margin: 0 3rem ;
+  }
+  
+  :is(.karma , .calculator, .team-builder, .supervisor) {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50% , -50%);
+  }
+  .team-builder {
+      top: 88%;
+  }
+  .karma {
+      top: 128%;
+  }
+  .calculator {
+      top: 166%;
+  }
+}
